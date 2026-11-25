@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name — Homepage</title>
+  <meta name="description" content="个人介绍 · MiniMax 实习 · SWE / coding">
+  <meta name="theme-color" content="#FAF9F5">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="top">
+    <a class="brand" href="./">
+      <svg class="pixel" width="9" height="14" viewBox="0 0 9 14" fill="currentColor" aria-hidden="true">
+        <rect x="0" y="0" width="2" height="2"/>
+        <rect x="2" y="2" width="2" height="2"/>
+        <rect x="4" y="4" width="2" height="2"/>
+        <rect x="6" y="6" width="2" height="2"/>
+        <rect x="4" y="8" width="2" height="2"/>
+        <rect x="2" y="10" width="2" height="2"/>
+        <rect x="0" y="12" width="2" height="2"/>
+      </svg>
+      <span>Your Name</span>
+    </a>
+    <div class="links">
+      <a class="active" href="./">Home</a>
+      <a href="#minimax">MiniMax</a>
+      <a href="#swe">SWE / Coding</a>
+      <a href="https://github.com/ethus007" target="_blank" rel="noopener">GitHub</a>
+      <button id="theme-btn" type="button" title="切换深色模式" aria-label="切换深色模式">◐</button>
+    </div>
+  </nav>
+
+  <main class="wrap card">
+    <header class="hero">
+      <div class="hero-top">
+        <div>
+          <h1 class="name">Your Name（姓名）</h1>
+          <div class="affil">
+            <div>学校 / 身份 · 在此填写</div>
+            <div>方向：LLM · SWE / coding</div>
+          </div>
+          <div class="bio">
+            <p class="fill">在此写 2～4 句介绍：现在在做什么、关心什么问题。不用堆荣誉。</p>
+            <p class="fill">第二段可写：目前在 MiniMax 实习，主要做 SWE / coding 相关的数据、评测或训练。</p>
+          </div>
+          <div class="links-row">
+            <a href="mailto:you@example.com">you(at)example.com</a>
+            <a href="https://github.com/ethus007" target="_blank" rel="noopener">GitHub</a>
+            <span class="fill">Google Scholar · Resume（有再补链接）</span>
+          </div>
+        </div>
+        <img class="portrait" src="assets/images/portrait.jpg" alt="Portrait">
+      </div>
+    </header>
+
+    <section class="section" id="education">
+      <h2>🏫 Education</h2>
+      <ul class="timeline">
+        <li>
+          <div class="dot">校</div>
+          <div>
+            <div class="title fill">学校名称</div>
+            <div class="sub fill">学院 · 学位</div>
+          </div>
+          <div class="when fill">20xx – 20xx</div>
+        </li>
+        <li>
+          <div class="dot">校</div>
+          <div>
+            <div class="title fill">上一阶段（可选）</div>
+            <div class="sub fill">在此填写，不需要就删这一条</div>
+          </div>
+          <div class="when fill">20xx – 20xx</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="minimax">
+      <h2>💻 Experience</h2>
+      <ul class="timeline">
+        <li>
+          <div class="dot">M</div>
+          <div>
+            <div class="title">MiniMax</div>
+            <div class="sub fill">组名 · 岗位（例如 LLM / SWE / Post-training Intern）</div>
+          </div>
+          <div class="when fill">20xx.xx – present</div>
+        </li>
+      </ul>
+
+      <div class="featured">
+        <h3>MiniMax 实习 · 做过的事</h3>
+        <ul>
+          <li class="fill">一条贡献：做了什么 → 落到哪（数据 / 评测 / 训练 / 环境）。</li>
+          <li class="fill">一条贡献：改了什么 → 结果怎么验收（内部 bench / 人工抽查）。</li>
+          <li class="fill">一条贡献：和别人的边界（你负责哪一块，不写团队总成绩）。</li>
+          <li class="fill">需要就再加；没有的条目直接删。数字不确定就不要编。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="swe">
+      <h2>🔧 SWE / Coding</h2>
+      <div class="work-grid">
+        <article class="work">
+          <span class="tag">工作 1</span>
+          <h3 class="fill">标题：例如数据 / 造题 / mix</h3>
+          <p class="fill">两三句：你具体做了什么，用什么协议，产出是什么。</p>
+        </article>
+        <article class="work">
+          <span class="tag">工作 2</span>
+          <h3 class="fill">标题：例如评测 / harness / SWE-bench</h3>
+          <p class="fill">两三句：测什么、怎么测、你看哪些指标。</p>
+        </article>
+        <article class="work">
+          <span class="tag">工作 3</span>
+          <h3 class="fill">标题：例如 SFT / 后训练里 coding 这一路</h3>
+          <p class="fill">两三句：配方、配比、选点。没有就删这张卡。</p>
+        </article>
+        <article class="work">
+          <span class="tag">可选</span>
+          <h3 class="fill">其它 SWE 相关（仓库 / 工具）</h3>
+          <p class="fill">可链到 <a href="https://github.com/ethus007">github.com/ethus007</a> 上的仓库。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Last updated: 2026-11-25 · 灰色斜纹处都是待填</span>
+    <a href="https://github.com/ethus007">github.com/ethus007</a>
+  </footer>
+  <script src="assets/js/theme.js"></script>
+</body>
+</html>
